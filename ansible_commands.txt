@@ -7,3 +7,5 @@
 4) ansible all -m gather_facts --limit ip 
 
 5) ansible all -m apt -a update_cache=true --become --ask-become-pass    [this command will update all package in the server its similer to apt update]
+
+6) ansible all -m apt -a name=vim-nox --become --ask-become-pass  [this command will install new packages]
