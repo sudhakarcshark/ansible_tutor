@@ -1,0 +1,9 @@
+1) ansible all --key-file ~/.ssh/new_file -i inventory_file -m ping
+
+2) ansible all --list-hosts   [to list all host]
+
+3) ansible all -m gather_facts  [gathers all information about servers that connects to ansible]
+
+4) ansible all -m gather_facts --limit ip 
+
+5) ansible all -m apt -a update_cache=true --become --ask-become-pass    [this command will update all package in the server its similer to apt update]
